@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	<parameter name="browser" value="Chrome"></parameter>
+  	<test thread-count="2" name="Test" parallel="methods">
+  	<groups>
+  		<run>
+  			<include name = "smoketest"></include>
+ 	  		<include name = "regressiontest"></include>
+  		</run>
+  	</groups>
+    <classes>
+      	<class name="AmazonTestCases.TestCases">
+      		<methods>         				  
+ 	  			<include name = "tc01"></include>
+ 	  			<include name = "tc03"></include>
+ 	  			<include name = "tc04"></include>
+ 	  			<include name = "tc05"></include>
+ 	  			
+ 	  		<!--<exclude name = "tc02"></exclude> -->	
+
+      		</methods>
+      	</class>
+	</classes>
+  	</test> <!-- Test -->
+</suite> <!-- Suite -->
